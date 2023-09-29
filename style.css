@@ -1,0 +1,93 @@
+/* styles.css */
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+    position: fixed; /* Fija el encabezado en la parte superior de la página */
+    top: 0;
+    left: 0;
+    z-index: 100; /* Asegura que el encabezado esté en la parte superior */
+}
+
+/* Estilos del menú de navegación */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block; /* Utiliza inline-block en lugar de inline para un mejor diseño */
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s; /* Agrega una transición suave para el cambio de color */
+}
+
+/* Efecto de cambio de color al pasar el mouse por encima */
+nav a:hover {
+    color: #ff6600; /* Cambia el color del texto al pasar el mouse por encima */
+}
+.section {
+    padding: 2rem;
+}
+
+.project {
+    margin-bottom: 2rem;
+}
+
+.project img {
+    max-width: 100%;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.section1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.Fondo {
+    background-image: url('https://images.pexels.com/photos/925743/pexels-photo-925743.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+}
+
+.Cuadro{
+    margin: 0; /* Elimina el margen predeterminado de los títulos */
+    border: 2px solid rgb(0, 0, 0); /* Añade un borde blanco de 2px alrededor del contenido */
+    padding: 30px; /* Espaciado interno para el contenido */
+    color: #000000;
+    text-align: center;
+}
