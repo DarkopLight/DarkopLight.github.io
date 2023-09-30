@@ -98,7 +98,7 @@ footer {
 
 .Cuadro{
     margin: 0; /* Elimina el margen predeterminado de los títulos */
-    border: 2px solid rgb(255, 255, 255); /* Añade un borde blanco de 2px alrededor del contenido */
+    border: 2px solid white; /* Añade un borde blanco de 2px alrededor del contenido */
     padding: 30px; /* Espaciado interno para el contenido */
     color: #000000;
     text-align: center;
