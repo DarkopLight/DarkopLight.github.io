@@ -1,5 +1,4 @@
 /* styles.css */
-/* styles.css */
 
 body {
     font-family: Arial, sans-serif;
@@ -12,40 +11,52 @@ body {
 }
 
 header {
-    background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-    width: 100%;
-    position: fixed; /* Fija el encabezado en la parte superior de la página */
-    top: 0;
-    left: 0;
-    z-index: 100; /* Asegura que el encabezado esté en la parte superior */
+    background-color: #333; /* Color de fondo del menú */
+    padding: 20px 0;
 }
 
-/* Estilos del menú de navegación */
 nav ul {
-    list-style: none;
+    list-style-type: none;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 nav li {
-    display: inline-block; /* Utiliza inline-block en lugar de inline para un mejor diseño */
-    margin-right: 20px;
+    display: inline;
+    margin: 0 20px; /* Espacio entre elementos del menú */
 }
 
 nav a {
     text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    transition: color 0.3s; /* Agrega una transición suave para el cambio de color */
+    color: #fff; /* Color del texto en estado normal */
+    position: relative; /* Añadimos posición relativa para que el cuadro se ajuste a este elemento */
+    transition: 0.3s; /* Agregamos una transición suave para el cambio de color */
 }
 
-/* Efecto de cambio de color al pasar el mouse por encima */
-nav a:hover {
-    color: #ff6600; /* Cambia el color del texto al pasar el mouse por encima */
+/* Efecto de cambio de color de fondo y texto al pasar el mouse por encima */
+nav li:hover {
+    background-color: #fff; /* Color de fondo al pasar el mouse por encima */
 }
+
+nav li:hover a {
+    color: #ff6600; /* Color del texto al pasar el mouse por encima */
+}
+
+/* Estilo del cuadro blanco */
+nav li:hover::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px; /* Ancho del cuadro blanco */
+    height: 100px; /* Altura del cuadro blanco */
+    background-color: #fff; /* Color del cuadro blanco */
+    border-radius: 4px; /* Bordes redondeados */
+    display: block;
+}
+
 .section {
     padding: 2rem;
 }
