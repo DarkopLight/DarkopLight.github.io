@@ -112,3 +112,19 @@ footer {
     display: inline-block; /* Evita el espacio adicional debajo de las imágenes */
     margin-bottom: 10px; /* Espacio entre las imágenes */
 }
+
+.redes{
+    position: relative;
+    overflow: hidden;
+}
+
+.rr{
+    max-width: 100%;
+    display: block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.rr:hover{
+    transform: scale(1.1); /* Escala la imagen en un 110% en hover */
+    filter: brightness(1.2); /* Aumenta el brillo de la imagen en hover */
+}
