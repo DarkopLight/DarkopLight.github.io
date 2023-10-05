@@ -37,7 +37,11 @@ nav a {
 
 /* Efecto de cambio de color de fondo y texto al pasar el mouse por encima */
 nav li:hover {
-    background-color: #fff; /* Color de fondo al pasar el mouse por encima */
+    width: 300px; /* Ancho de la caja */
+    height: 200px; /* Altura de la caja */
+    background-color: #f0f0f0; /* Color de fondo de la caja */
+    border: 2px solid #333; /* Borde de la caja */
+    padding: 20px; /* Espacio interior de la caja */
 }
 
 nav li:hover a {
