@@ -35,17 +35,10 @@ nav a {
     transition: 0.3s; /* Agregamos una transición suave para el cambio de color */
 }
 
-/* Efecto de cambio de color de fondo y texto al pasar el mouse por encima */
-nav li:hover {
-    width: 300px; /* Ancho de la caja */
-    height: 200px; /* Altura de la caja */
-    background-color: #f0f0f0; /* Color de fondo de la caja */
-    border: 2px solid #333; /* Borde de la caja */
-    padding: 20px; /* Espacio interior de la caja */
-}
+
 
 nav li:hover a {
-    color: #ff6600; /* Color del texto al pasar el mouse por encima */
+    color: #848678; /* Color del texto al pasar el mouse por encima */
 }
 
 
@@ -95,36 +88,24 @@ footer {
     text-align: center;
 }
 
-.contacto{
-    text-align: center;
-}
+.redes {
+    display: inline-block; /* Evita el espacio adicional debajo de las imágenes */
+    margin-bottom: 10px; /* Espacio entre las imágenes */
+    margin-left: auto;
+    position: absolute;
+    right: 15px;
 
-.contacto{
-    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo transparente */
-    border: 2px solid #000; /* Borde negro */
-    padding: 20px; /* Espacio interior de la caja */
-    color: white;
-  
 }
 
 .redes img {
-    max-width: 100%; /* Asegura que las imágenes se ajusten al ancho de la caja */
-    display: inline-block; /* Evita el espacio adicional debajo de las imágenes */
-    margin-bottom: 10px; /* Espacio entre las imágenes */
+    width: 30px;
+    height: 30px; 
+    position: absolute; top: 50%; left: 50%; 
+    transform: translate(-50%, -50%);
+    transition: box-shadow 0.3s ease; /* Aplicamos una transición al efecto de sombra */
+    border-radius: 10px;
 }
 
-.redes{
-    position: relative;
-    overflow: hidden;
-}
-
-.rr{
-    max-width: 100%;
-    display: block;
-    transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.rr:hover{
-    transform: scale(1.1); /* Escala la imagen en un 110% en hover */
-    filter: brightness(1.2); /* Aumenta el brillo de la imagen en hover */
+.redes img:hover {
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5); /* Agrega una sombra para simular el efecto de brillo */
 }
