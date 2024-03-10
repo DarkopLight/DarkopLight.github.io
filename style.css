@@ -12,7 +12,7 @@ body {
 
 /* Estilos básicos del menú */
 header {
-    background-color: #333; /* Color de fondo del menú */
+    background-color: #ccd0d3; /* Color de fondo del menú */
     padding: 20px 0;
 }
 
@@ -30,7 +30,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #fff; /* Color del texto en estado normal */
+    color: #000000; /* Color del texto en estado normal */
     position: relative; /* Añadimos posición relativa para que el cuadro se ajuste a este elemento */
     transition: 0.3s; /* Agregamos una transición suave para el cambio de color */
 }
@@ -38,7 +38,7 @@ nav a {
 
 
 nav li:hover a {
-    color: #848678; /* Color del texto al pasar el mouse por encima */
+    color: #ffffff; /* Color del texto al pasar el mouse por encima */
 }
 
 
