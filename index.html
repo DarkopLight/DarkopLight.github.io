@@ -3,35 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sky - Desarrollador Web</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Fotografia</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
     <header>
-        <img class="logo" src="LogoO.png" alt="Logo">
-        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
-        <nav class="nav" id="nav">
-            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x-circle"></i></button>
-            <ul class="nav-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About me</a></li>
-                <li><a href="Services.html">Services</a></li>
-                <li><a href="Projects.html">Projects</a></li>
+        <nav>
+            <ul>
+                <li><a href="#Inicio">Inicio</a></li>
+                <li><a href="#Nosotros">Nosotros</a></li>
+                <li><a href="#Servicios">Servicios</a></li>
+                <li><a href="#Contactanos">Contactanos</a></li>
             </ul>
         </nav>
     </header>
-    <script src="main.js"></script>
 
-    <section id="inicio" class="Fondo">
-        <div id="Hello">
-        <h1><span>Hello!</span></h1>
-        <h2><span> I'm Oscar, a web developer <br>from Colombia</span></h2>
+    <div class="Fondo" id="Inicio">
+        <img src="Fondo2.jpeg" width="100%" alt="">
     </div>
-    </section>
-    <footer>
-        <p>&copy; 2024 Oscar </p>
-    </footer>
+
+    <div class="Servicios" id="Servicios">
+        <h1>Servicios</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum doloremque numquam porro. Maxime magni fugit minima at! Voluptatum distinctio beatae sequi maxime dolorem. Rem doloribus facere placeat, dolore consequuntur eos!</p>
+        <div class="contenedor-lista">
+            <ul class="columna">
+                <li>Fotografia</li>
+                <li>Retrato</li>
+                <li>Naturaleza</li>
+            </ul>
+            <ul class="columna">
+                <li>Parejas</li>
+                <li>Familias</li>
+                <li>Animales</li>
+            </ul>
+            <ul class="columna">
+                <li>Lorem</li>
+                <li>Lorem</li>
+                <li>Lorem</li>
+            </ul>
+            <ul class="columna">
+                <li>Lorem</li>
+                <li>Lorem</li>
+                <li>Lorem</li>
+            </ul>
+        </div>   
+        <h3>Nuestros Trabajos</h3>
+        <div class="contenedor">
+            <img class="imagen" src="Imagen2.jpeg" alt="Imagen 2">
+            <img class="imagen" src="Imagen3.jpeg" alt="Imagen 3">
+            <img class="imagen" src="Imagen1.jpeg" alt="Imagen 1">
+            <img class="Logo" src="Logo.png" alt="Logo">
+            <div class="Titulo">
+                <h2>Fotografias</h2>
+            </div>
+        </div>     
+    </div>
+    <br>
+    
+    <div class="Nosotros" id="Nosotros">
+        <img class="Ellos" src="Ellosxd.jpeg" alt="Ellos">
+        <div class="TextoN">
+            <h1>Nosotros</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit sint sequi laboriosam eligendi voluptas obcaecati commodi totam, eaque deserunt eius expedita, tempore saepe aperiam porro reprehenderit quod dolorum sunt consequuntur!</p>
+        </div>
+    </div>
+
+    <section id="Contactanos">
+  
+        <h1 class="section-header">Contactanos</h1>
+        
+        <div class="contact-wrapper">
+          
+          <form id="contact-form" class="form-horizontal" role="form">
+             
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input type="text" class="form-control" id="name" placeholder="NOMBRE" name="name" value="" required>
+              </div>
+            </div>
+      
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input type="email" class="form-control" id="email" placeholder="CORREO" name="email" value="" required>
+              </div>
+            </div>
+      
+            <textarea class="form-control" rows="10" placeholder="MENSAJE" name="message" required></textarea>
+            
+            <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+              <div class="alt-send-button">
+                <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+              </div>
+            
+            </button>
+            
+          </form>
+          
+            <div class="direct-contact-container">
+      
+              <ul class="contact-list">
+                <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Cali, Colombia</span></i></li>
+                
+                <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">1234567890</a></span></i></li>
+                
+                <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">oscar98cr.15@hotmail.com</a></span></i></li>
+                
+              </ul>
+      
+              <hr>
+              <ul class="social-media-list">
+                <li><a href="#" target="_blank" class="contact-icon">
+                  <img class="logos" src="fb.png" alt="">
+                  <i class="fa fa-facebook" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="#" target="_blank" class="contact-icon">
+                  <img class="logos" src="yt.png" width="45px" alt="">
+                  <i class="fa fa-youtube" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="#" target="_blank" class="contact-icon">
+                  <img class="logos" src="X.png" width="45px" alt="">
+                  <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="#" target="_blank" class="contact-icon">
+                  <img class="logos" src="ig.png" alt="">
+                  <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </li>       
+              </ul>
+              <hr>
+      
+              <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+      
+            </div>
+          
+        </div>
+        
+      </section>  
+
 </body>
 </html>
