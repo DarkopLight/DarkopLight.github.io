@@ -5,59 +5,113 @@ body {
 
 /* Estilos básicos del menú */
 header {
-    background-color: #333; /* Color de fondo del menú */
-    padding: 15px 0;
-    position: sticky;
-    top: 0;
-    z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #000000;
+  height: 9px
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+.logo {
+  max-width: 7rem;
+  height: 100px;
 }
 
-nav li {
-    display: inline;
-    margin: 0 20px; /* Espacio entre elementos del menú */
-    position: relative; /* Añadimos posición relativa para que el cuadro se ajuste a este elemento */
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
 }
 
-nav a {
-    text-decoration: none;
-    color: #fff; /* Color del texto en estado normal */
-    transition: 0.3s; /* Agregamos una transición suave para el cambio de color */
+.nav-list li a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
-/* Efecto de cambio de color del texto al pasar el mouse por encima */
 nav li:hover a {
-    color: #3cc953; /* Color del texto al pasar el mouse por encima */
+  color: #3cc953; /* Color del texto al pasar el mouse por encima */
 }
 
-/* Estilo del cuadro blanco */
-nav li:hover::before {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px; /* Ancho del cuadro blanco */
-    height: 5px; /* Altura del cuadro blanco */
-    background-color: #fff; /* Color del cuadro blanco */
-    border-radius: 4px; /* Bordes redondeados */
-    display: block;
+nav li:hover a {
+  color: #3cc953; /* Color del texto al pasar el mouse por encima */
 }
 
+.abrir-menu,
+.cerrar-menu {
+  display: none;
+}
 
+@media screen and (max-width: 550px) {
+  .abrir-menu,
+  .cerrar-menu {
+      display: block;
+      border: 0;
+      font-size: 1.25rem;
+      background-color: transparent;
+      cursor: pointer;
+  }
+
+  .abrir-menu {
+      color: #ffffff;
+  }
+
+  .cerrar-menu {
+      color: #ececec;
+  }
+
+  .nav {
+      opacity: 0;
+      visibility: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      gap: 1rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #1c1c1c;
+      padding: 2rem;
+      box-shadow: 0 0 0 0vmax rgba(0, 0, 0, .5);
+      z-index: 1000;
+      height: 200px;
+  }
+
+  .nav.visible {
+      opacity: 1;
+      visibility: visible;
+  }
+
+  .nav-list {
+      flex-direction: column;
+      align-items: end;
+  }
+
+  .nav-list li a {
+      color: #ececec;
+  }
+}
+
+@media screen and (max-width: 699px) {
+.contenedor {
+    height: 190px; /* Altura fija para el contenedor, ajusta el valor según tus necesidades */
+    display: flex;
+    /*justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 45px;
+    padding: 0.7rem;
+  }
+}
+@media screen and (min-width: 700px) {
 .contenedor {
     height: 600px; /* Altura fija para el contenedor, ajusta el valor según tus necesidades */
     display: flex;
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
+  }
 }
-
 .imagen {
     max-height: 100%; /* Para que las imágenes no sean más altas que el contenedor */
     width: auto; /* Para mantener la proporción de aspecto original de las imágenes */
@@ -68,7 +122,8 @@ nav li:hover::before {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
-    background-color: rgb(0, 0, 0);  
+    background-color: rgb(0, 0, 0);
+    padding: 0.5rem;  
 }
 
 .imagen:hover {
@@ -81,17 +136,31 @@ nav li:hover::before {
     display: block;
 }
 
-.Logo {
+@media screen and (min-width: 700px) {
+.Logo2 {
     position: absolute;
-    top: 60%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 50%;
     color: #fff; /* Color del texto */
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 100%;
+  }
 }
-
+@media screen and (max-width: 699px) { 
+.Logo2 {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 50%;
+    width: 200px;
+    color: #fff; /* Color del texto */
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 100%;
+  }
+}
 .contenedor-lista {
     display: flex;
     flex-wrap: wrap;
@@ -109,22 +178,40 @@ nav li:hover::before {
     margin-bottom: 10px; /* Espacio entre elementos */
 }
 
+@media screen and (min-width: 700px) {
 .Titulo{
     position: absolute;
     bottom: 550px; /* Ajusta la distancia del texto desde la parte inferior */
     left: 0;
     right: 0;
+    top: 20%;
     text-align: center;
     color: #000000; /* Color del texto */
     padding: 5px; /* Espacio alrededor del texto */
     font-size: 32px;
     transition: background-color 0.3s ease;
+  }
 }
 
+@media screen and (max-width: 699px) { 
+.Titulo{
+    position: absolute;
+    bottom: 550px; /* Ajusta la distancia del texto desde la parte inferior */
+    left: 0;
+    right: 0;
+    top: 10%;
+    text-align: center;
+    color: #000000; /* Color del texto */
+    padding: 5px; /* Espacio alrededor del texto */
+    font-size: 25px;
+    transition: background-color 0.3s ease;
+  }
+}
 .Titulo:hover{
     text-shadow: 0 0 10px rgb(255, 255, 255); /* Agrega un efecto de brillo */
     color: #ffffff;
 }
+
 
 .formulario {
     background-color: #fff;
@@ -197,6 +284,7 @@ button:hover {
   height: 100%;
 }
 
+@media screen and (max-width: 699px) {
 .section-header {
   text-align: center;
   margin: 0 auto;
@@ -205,8 +293,21 @@ button:hover {
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 6px;
+  font-size: 50px;
+  }
 }
 
+@media screen and (min-width: 700px) {
+.section-header {
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 0;
+  font: 300 60px 'Oswald', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  }
+}
 .contact-wrapper {
   display: flex;
   flex-direction: row;
