@@ -96,11 +96,11 @@ nav li:hover a {
 
 @media screen and (max-width: 699px) {
 .contenedor {
-    height: 190px; /* Altura fija para el contenedor, ajusta el valor según tus necesidades */
+    height: 147px; /* Altura fija para el contenedor, ajusta el valor según tus necesidades */
     display: flex;
     /*justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
-    width: 45px;
+    width: 40px;
     padding: 0.7rem;
   }
 }
@@ -151,11 +151,11 @@ nav li:hover a {
 @media screen and (max-width: 699px) { 
 .Logo2 {
     position: absolute;
-    top: 35%;
+    top: 27%;
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 50%;
-    width: 200px;
+    width: 160px;
     color: #fff; /* Color del texto */
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 100%;
@@ -199,7 +199,7 @@ nav li:hover a {
     bottom: 550px; /* Ajusta la distancia del texto desde la parte inferior */
     left: 0;
     right: 0;
-    top: 10%;
+    top: 7%;
     text-align: center;
     color: #000000; /* Color del texto */
     padding: 5px; /* Espacio alrededor del texto */
@@ -263,6 +263,7 @@ button:hover {
     position: relative;
     width: 100%;
 }
+
 .TextoN {
         position: absolute;
         top: 50%;
@@ -273,12 +274,51 @@ button:hover {
         text-align: center;
 }
 
-.Ellos {
-    width: 100%;
-    max-width: 100%;
-    display: block;
+@media screen and (max-width: 699px) {
+.TextoN {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        text-align: center;
+        width: 230px;
+        height: 130px;
+        font-size: 12px;
+  }
 }
 
+@media screen and (max-width: 699px) {
+.TextoN2 {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        text-align: center;
+        width: 230px;
+        height: 130px;
+        font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+.Ellos {
+    width: 100%;
+    height: 800px;
+    max-width: 100%;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 699px) {
+.Ellos {
+    width: 100%;
+    height: 500px;
+    display: block;
+  }
+}
 #contact {
   width: 100%;
   height: 100%;
@@ -293,7 +333,7 @@ button:hover {
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 6px;
-  font-size: 50px;
+  font-size: 40px;
   }
 }
 
@@ -326,14 +366,16 @@ button:hover {
   font-weight: 400;
 }
 
+@media screen and (max-width: 699px) {
 .form-control, 
 textarea {
-  max-width: 400px;
+  width: 160px;
   background-color: #000;
   color: #fff;
   letter-spacing: 1px;
+  padding: 1rem;
+  }
 }
-
 .send-button {
   margin-top: 15px;
   height: 34px;
@@ -510,6 +552,10 @@ hr {
     margin: 0 auto;
   }
  
+  .contact-list {
+    padding: 1px;
+    justify-content: center;
+  }
   
   .name, .email, textarea {
     width: 280px;
