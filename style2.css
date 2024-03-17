@@ -161,6 +161,20 @@ nav li:hover a {
     border-radius: 100%;
   }
 }
+
+@media screen and (max-width: 400px) { 
+  .Logo2 {
+      position: absolute;
+      top: 29%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 50%;
+      width: 160px;
+      color: #fff; /* Color del texto */
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 100%;
+    }
+  }
 .contenedor-lista {
     display: flex;
     flex-wrap: wrap;
@@ -204,6 +218,20 @@ nav li:hover a {
     color: #000000; /* Color del texto */
     padding: 5px; /* Espacio alrededor del texto */
     font-size: 25px;
+    transition: background-color 0.3s ease;
+  }
+}
+@media screen and (max-width: 400px) { 
+.Titulo{
+    position: absolute;
+    bottom: 550px; /* Ajusta la distancia del texto desde la parte inferior */
+    left: 0;
+    right: 0;
+    top: 7%;
+    text-align: center;
+    color: #000000; /* Color del texto */
+    padding: 5px; /* Espacio alrededor del texto */
+    font-size: 23px;
     transition: background-color 0.3s ease;
   }
 }
