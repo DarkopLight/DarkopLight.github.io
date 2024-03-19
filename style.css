@@ -270,4 +270,33 @@ footer {
    /* padding: 30px; /* Espaciado interno para el contenido */
    /* color: #000000;
     text-align: center;
+}*/
+
+@media screen and (max-width: 699px) {
+.Services {
+        gap: 1rem;
+        font-size: 1.3rem;
+        padding: 1rem;
+}
+
+.Services li {
+        gap: 1rem;
+        font-size: 1.3rem;
+        padding: 7px;
+        font-size: 13px;
+}
+}
+
+@media screen and (min-width: 700px) {
+    .Services {
+        gap: 1rem;
+        font-size: 1.3rem;
+        padding: 2rem;
+}
+
+.Services li {
+        gap: 1rem;
+        font-size: 1.3rem;
+        padding: 7px;
+}
 }
