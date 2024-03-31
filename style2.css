@@ -76,7 +76,6 @@ nav li:hover a {
       padding: 2rem;
       box-shadow: 0 0 0 0vmax rgba(0, 0, 0, .5);
       z-index: 1000;
-      height: 200px;
   }
 
   .nav.visible {
