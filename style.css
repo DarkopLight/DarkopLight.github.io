@@ -194,7 +194,7 @@ footer {
         border-radius: 20px;
         opacity: 50%;
         width: 300px;
-        height: 460px;
+        height: 500px;
         text-align: center;
         color: #fff;
         position: relative; top: 50%; left: 50%; 
@@ -229,6 +229,7 @@ footer {
 
 .Skills img {
     filter: brightness(50%);
+    width: 50px;
 }
 
 .Contacts img {
