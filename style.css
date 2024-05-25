@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#particles-js{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    z-index: -1;
+    position: fixed;
+}
+
+.Prueba{
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    right: 50%;
+    top: 30%;
+    font-size: 20px;
+    padding: 3px;
+}
+
+.C2{
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    right: 10%;
+    height: 340px;
+    width: 400px;
+    top: 30%;
+    border: 5px solid rgb(255, 255, 255);
+    padding: 1rem;
+    font-size: 30px;
+    visibility: visible;
+}
+
+.C2 h2{
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 40%;
+}
+
+.C2 img {
+    width: 70px;
+    padding: 2rem;
+    user-select: none;
+    position: absolute;
+    opacity: 0; /* Hacer las imágenes inicialmente invisibles */
+}
+
+.img1 {
+    animation: aparecer 1s ease forwards 0.5s, caida1 1s ease forwards 0.5s;
+}
+
+.img2 {
+    animation: aparecer 1s ease forwards 1s, caida2 1s ease forwards 1s;
+}
+
+.img3 {
+    animation: aparecer 1s ease forwards 1.5s, caida3 1s ease forwards 1.5s;
+}
+
+.img4 {
+    animation: aparecer 1s ease forwards 2s, caida4 1s ease forwards 2s;
+}
+
+.img5 {
+    animation: aparecer 1s ease forwards 2.5s, caida5 1s ease forwards 2.5s;
+}
+
+@keyframes aparecer {
+    0% { opacity: 0; } /* Inicio: invisible */
+    100% { opacity: 1; } /* Fin: visible */
+}
+
+@keyframes caida1 { 
+    0% { top: -100px; left: 10%; } /* Inicio de la caída para la primera imagen */
+    100% { top: 50px; left: 5%; } /* Fin de la caída para la primera imagen */
+}
+
+@keyframes caida2 {
+    0% { top: -100px; left: 30%; } /* Inicio de la caída para la segunda imagen */
+    100% { top: 50px; left: 35%; } /* Fin de la caída para la segunda imagen */
+}
+
+@keyframes caida3 {
+    0% { top: -100px; left: 50%; } /* Inicio de la caída para la tercera imagen */
+    100% { top: 50px; left: 65%; } /* Fin de la caída para la tercera imagen */
+}
+
+@keyframes caida4 {
+    0% { top: -100px; left: 70%; } /* Inicio de la caída para la cuarta imagen */
+    100% { top: 200px; left: 5%; } /* Fin de la caída para la cuarta imagen */
+}
+
+@keyframes caida5 {
+    0% { top: -100px; left: 90%; } /* Inicio de la caída para la quinta imagen */
+    100% { top: 200px; left: 35%; } /* Fin de la caída para la quinta imagen */
+}
+
+
+.contacto {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    margin: 10px;
+}
+
+.contacto:hover {
+    background-color: #000000;
+    border-color: #ffffff;
+    color: white;
+}
+
+.contacto:focus {
+    outline: none;
+}
+
+.contacto:active {
+    background-color: #ffffff;
+    border-color: #003366;
+}
+
+.Services {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    margin: 10px;
+}
+
+.Services:hover {
+    background-color: #000000;
+    border-color: #ffffff;
+    color: white;
+}
+
+.Services:focus {
+    outline: none;
+}
+
+.Services:active {
+    background-color: #ffffff;
+    border-color: #003366;
+}
+
+.Services:hover, .Services.pressed {
+    background-color: #000000;
+    border-color: #ffffff;
+    color: white;
+}
+
+.C3{
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    right: 10%;
+    height: 340px;
+    width: 400px;
+    top: 30%;
+    border: 5px solid rgb(255, 255, 255);
+    padding: 2rem;
+    font-size: 30px;
+    visibility: hidden;
+    font-size: 30px;
+}
+
+.C3 h2{
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 27%;
+    top: 5%;
+}
+
+.C3 ul li{
+    text-align: center;
+    position: relative;
+    padding: 0.5rem;
+}
+
+.C4{
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    right: 10%;
+    height: 340px;
+    width: 400px;
+    top: 30%;
+    border: 5px solid rgb(255, 255, 255);
+    padding: 2rem;
+    font-size: 30px;
+    visibility: hidden;
+    font-size: 30px;
+}
+
+
+.C4 li a {
+    text-decoration: none;
+    color: #8d8d8d;
+}
+
+.C4P:hover a {
+    color: #ffffff;
+}
+
+.C4P2:hover a {
+    color: #ffffff;
+}
+
+.C4 h2{
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 35%;
+    top: 5%;
+}
+
+.Projects {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    margin: 10px;
+}
+
+.Projects:hover {
+    background-color: #000000;
+    border-color: #ffffff;
+    color: white;
+}
+
+.Projects:focus {
+    outline: none;
+}
+
+.Projects:active {
+    background-color: #ffffff;
+    border-color: #003366;
+}
+
+.Projects:hover, .Projects.pressed {
+    background-color: #000000;
+    border-color: #ffffff;
+    color: white;
+}
