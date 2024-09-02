@@ -1,0 +1,303 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #ccd0d3;
+    height: 9px
+}
+
+.logo {
+    max-width: 5rem;
+    height: 80px;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #1c1c1c;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+@media screen and (max-width: 550px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu {
+        color: #1c1c1c;
+    }
+
+    .cerrar-menu {
+        color: #ececec;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a {
+        color: #ececec;
+    }
+}
+
+
+nav li:hover a {
+    color: #ffffff; /* Color del texto al pasar el mouse por encima */
+}
+
+
+.section {
+    padding: 2rem;
+}
+
+.project {
+    margin-bottom: 2rem;
+}
+
+.project img {
+    max-width: 100%;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.section1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.Fondo {
+    background-image: url('https://cdn.pixabay.com/photo/2023/02/07/13/55/forest-7774205_1280.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 800px;
+}
+
+.F-NHo {
+    background-image: url('https://cdn.pixabay.com/photo/2023/02/07/13/55/forest-7774205_1280.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    width: 100%;
+    height: 800px;
+}
+
+@media screen and (max-width: 699px) {
+    .Text  {
+        padding: 2rem;
+        background-color: #1c1c1c;
+        border-radius: 20px;
+        opacity: 50%;
+        width: 300px;
+        height: 300px;
+        text-align: center;
+        color: #fff;
+        position: relative; top: 50%; left: 50%; 
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .Text {
+        padding: 2rem;
+        background-color: #1c1c1c;
+        border-radius: 20px;
+        opacity: 50%;
+        width: 700px;
+        height: 300px;
+        text-align: center;
+        color: #fff;
+        position: relative; top: 50%; left: 50%; 
+        transform: translate(-50%, -50%);
+        min-width: 250px;
+    } 
+}
+    .Projects{
+        list-style-type: none;
+        display: flex;
+        gap: 1rem;
+        font-size: 1.3rem;
+    }
+    
+    
+    .Projects li a {
+        text-decoration: none;
+        color: #8d8d8d;
+    }
+    
+    .Projects:hover a {
+        color: #ffffff;
+    }
+
+@media screen and (max-width: 699px) {
+    .About {
+        padding: 2rem;
+        background-color: #1c1c1c;
+        border-radius: 20px;
+        opacity: 50%;
+        width: 300px;
+        height: 500px;
+        text-align: center;
+        color: #fff;
+        position: relative; top: 50%; left: 50%; 
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .About {
+        padding: 2rem;
+        background-color: #1c1c1c;
+        border-radius: 20px;
+        opacity: 50%;
+        width: 700px;
+        height: 370px;
+        text-align: center;
+        color: #fff;
+        position: relative; top: 50%; left: 50%; 
+        transform: translate(-50%, -50%);
+        min-width: 250px;
+    } 
+}
+
+.About h1 {
+    color: #fff;
+    text-align: center;
+}
+
+.About p {
+    color: #fff;
+}
+
+.Skills img {
+    filter: brightness(50%);
+    width: 50px;
+}
+
+.Contacts img {
+    filter: invert(100%);
+    width: 45px;
+}
+
+
+@keyframes brillar {
+    from {
+        filter: brightness(50%); /* Brillo inicial */
+    }
+    to {
+        filter: brightness(150%); /* Brillo completo */
+    }
+}
+
+.Skills img:hover {
+    animation: brillar 1s ease forwards;
+}
+
+
+@keyframes aparecer {
+    from {
+        opacity: 0; /* Desde una opacidad de 0 (oculto) */
+    }
+    to {
+        opacity: 1; /* Hasta una opacidad de 1 (completamente visible) */
+    }
+}
+
+#Hello span {
+    animation: aparecer 1s forwards;
+}
+
+/*.Cuadro{
+    margin: 0; /* Elimina el margen predeterminado de los títulos */
+  /*  border: 2px solid white; /* Añade un borde blanco de 2px alrededor del contenido */
+   /* padding: 30px; /* Espaciado interno para el contenido */
+   /* color: #000000;
+    text-align: center;
+}*/
+
+@media screen and (max-width: 699px) {
+.Services {
+        gap: 1rem;
+        font-size: 1.3rem;
+        padding: 1rem;
+}
+
+.Services li {
+        gap: 1rem;
+        font-size: 1.3rem;
+        padding: 7px;
+        font-size: 13px;
+}
+}
+
+@media screen and (min-width: 700px) {
+    .Services {
+        gap: 1rem;
+        font-size: 1.3rem;
+        padding: 2rem;
+}
+
+.Services li {
+        gap: 1rem;
+        font-size: 1.3rem;
+        padding: 7px;
+}
+}
