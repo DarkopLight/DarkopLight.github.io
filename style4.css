@@ -1,0 +1,107 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #ffffff;
+    height: 110px
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #1c1c1c;
+}
+
+.nav-list li img{
+    max-width: 10rem;
+    height: 8rem;
+    padding: 1rem;
+}
+
+.logo {
+    max-width: 22rem;
+    height: 65px;
+}
+
+.FT{
+    list-style-type: none;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 4rem;
+}
+
+.FT li a{
+    text-decoration: none;
+    color: #1c1c1c;
+    padding: 2rem;
+}
+
+.MenuS {
+    background-color: white;
+    position: absolute;
+    top: 20%;
+    width: 40rem;
+    height: 36rem;
+    left: 33%;
+    right: 50%;
+    z-index: 2;
+    padding: 1px;
+    text-align: center;
+    color: white;
+    visibility: hidden;
+}
+
+.btn-close{
+    left: 48%;
+    top: 0%;
+    z-index: 2;
+    position: relative;
+    color: white;
+}
+
+.MenuS h3 {
+    color: black;
+    top: 0%;
+}
+.MenuS li {
+    padding: 0.5rem;
+    list-style: none;
+    text-decoration: none;
+}
+
+.MenuS li a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    background-color: #004AAD;
+    padding: 1px 20px;
+    display: block;
+}
+.MenuS li a:hover{
+    background-color: gray;
+}
+
+.M5T, .MFTA, .ML39, .MCJ, .MCS, .MPZ, .MFL, .MGD, .MBG, .MPL {
+    display: none;
+}
+
+.MenuS li ul li {
+    list-style: none;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    padding: 1px 20px;
+}
